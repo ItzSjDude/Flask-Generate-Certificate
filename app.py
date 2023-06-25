@@ -326,7 +326,7 @@ def send_async_email(app, client, data):
 
 
 def send_email_now(email, subject, from_email, from_email_name, template_name, **kwargs):
-    aws_email = config("AWS_SES_VERIFIED_EMAIL")
+    aws_email = "Sachinjangir746@gmail.com"
     sender = f"{from_email_name} <{aws_email}>"
     client = boto3.client('ses',
                           region_name=config("AWS_REGION"),
