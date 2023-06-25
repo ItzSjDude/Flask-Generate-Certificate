@@ -329,7 +329,7 @@ def send_email_now(email, subject, from_email, from_email_name, template_name, *
     aws_email = "Sachinjangir746@gmail.com"
     sender = f"{from_email_name} <{aws_email}>"
     client = boto3.client('ses',
-                          region_name="us-east-1",
+                          region_name="eu-north-1",
                           aws_access_key_id="AKIA6D6OUZONEACVK72Z",
                           aws_secret_access_key="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"
                           )
